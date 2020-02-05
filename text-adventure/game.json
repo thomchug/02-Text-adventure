@@ -1,0 +1,154 @@
+{
+        "ENTR": {
+                "name": "Entrance",
+                "desc": "This is the entrance to a dark cavern. Your trials await!",
+                "exits": [{
+                    "exit": "NORTH",
+			        "target": "CAV1"
+                }]
+        },
+        "CAV1": {
+            "name": "Entrance",
+            "desc": "This is the entrance to a dark cavern. Your trials await!",
+            "exits": [{
+                "exit": "NORTH",
+                "target": "CAV3"
+            },
+            {
+                "exit": "NW",
+                "target": "CAV2"
+            }]
+    },
+    "CAV2": {
+        "name": "Entrance",
+        "desc": "This is the entrance to a dark cavern. Your trials await!",
+        "exits": [{
+            "exit": "SE",
+            "target": "CAV1"
+        },
+        {
+            "exit": "EAST",
+            "target": "CAV3"
+        }]
+},
+"CAV3": {
+    "name": "Entrance",
+    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "exits": [{
+        "exit": "EAST",
+        "target": "SHAM"
+    },
+    {
+        "exit": "WEST",
+        "target": "CAV2"
+    },
+    {
+        "exit": "SOUTH",
+        "target": "CAV1"
+    },
+    {
+        "exit": "NORTH",
+        "target": "HALL"
+    }
+]
+},
+"HALL": {
+    "name": "Entrance",
+    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "exits": [{
+        "exit": "NORTH",
+        "target": "BONF"
+    },
+    {
+        "exit": "EAST",
+        "target": "ARMO"
+    },
+    {
+        "exit": "WEST",
+        "target": "BOSS"
+    },
+    {
+        "exit": "SOUTH",
+        "target": "CAV3"
+    }]
+},
+"ARMO": {
+    "name": "Entrance",
+    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "exits": [{
+        "exit": "WEST",
+        "target": "HALL"
+    },{
+        "exit": "NORTH",
+        "target": "PET1"
+    }]
+},
+"BONF": {
+    "name": "Cooking Bonfire",
+    "desc": "Several goblins are roasting meat over a roaring fire. Several small bits of meat lay out cooling as they focus on their work.",
+    "exits": [{
+        "exit": "SOUTH",
+        "target": "HALL"
+    }],
+    "items": [{
+        "item": "MEAT",
+        "desc": "A steaming hunk of meat still firmly attached to the bone",
+        "take": "You take the meat quietly. The goblins don't seem to notice"
+    }]
+},
+"BOSS": {
+    "name": "Goblin Boss Throne",
+    "desc": "A portly goblin in royal red robes sits upon a groaning wooden throne.\nHe goes wide-eyed as you enter,'If you have slipped passed my guards, maybe you can defeat the Ear!' Take the rod on the wall!",
+    "exits": [{
+        "exit": "EAST",
+        "target": "HALL"
+    }],
+    "items": [{
+        "item": "ROD",
+        "desc": "An platinum rod is displayed on the wall.",
+        "take": "You take the rod from the wall. It hums with arcane power."
+    }]
+},
+"SHAM": {
+    "name": "Shaman's Quarters",
+    "desc": "A small table with an old woman behind it sits in this room.\nShe smiles a toothless grin and holds out a closed hand to you.",
+    "exits": [{
+        "exit": "WEST",
+        "target": "CAV3"
+    }],
+    "items": [{
+        "item": "MEDAL",
+        "desc": "The woman holds out a silver chained medallion",
+        "take": "You take the medallion. A protective shield springs to life around you."
+    }]
+},
+"PET1": {
+    "name": "Pet Dragon Nest",
+    "desc": "Inside this room sleeps a young blue dragon.\nIts iridescent blue scales shine with sparking electricity as its giant form rises as you enter.\nIt's lightning zips past your head as you look for a way out.\nTo the north is a metal door scarred with lightning",
+    "exits": [{
+        "exit": "SOUTH",
+        "target": "ARMO"
+    }, 
+    {
+        "exit": "NORTH",
+        "target": "BEDR"
+    }
+    ]
+},
+"BEDR": {
+    "name": "Beholder's Scrying Chamber",
+    "desc": "You have reached the room of the Great Beholder, Coeryn The Ear!\n He spins his eyestalks towards you and you duck under his eye rays\nLooking around you can see several objects scattered around the room and a vault in the north of the room",
+    "exits": [{
+        "exit": "NORTH",
+        "target": "TREASR"
+    }]
+},
+"TREASR": {
+    "name": "Treasure Room",
+    "desc": "You have found the treasure hoard of the Great Beholder, Coeryn The Ear!\nAs you grab as many gold, platinum and jeweled baubles you can find,\nyou see a small hatch in the floor. Loot in tow, you climb out to the surface and vanish into the night, victorious!!",
+    "exits": []
+}
+
+
+
+}
