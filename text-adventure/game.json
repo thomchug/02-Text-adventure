@@ -8,8 +8,8 @@
                 }]
         },
         "CAV1": {
-            "name": "Entrance",
-            "desc": "This is the entrance to a dark cavern. Your trials await!",
+            "name": "Cavern #1",
+            "desc": "The bones of previous adventurers litter the floor of this cavern.\nYou see several spatters of blood and gore as you walk towards the center of the cavern.\nA small exit to the northwest is barely visible, and a large opening can be seen to the north as you hide from a passing goblin patrol.",
             "exits": [{
                 "exit": "NORTH",
                 "target": "CAV3"
@@ -20,20 +20,17 @@
             }]
     },
     "CAV2": {
-        "name": "Entrance",
-        "desc": "This is the entrance to a dark cavern. Your trials await!",
-        "exits": [{
-            "exit": "SE",
-            "target": "CAV1"
-        },
+        "name": "Cavern #2",
+        "desc": "A small, cramped cavern forces you to go down on all fours.\nAs you crawl, you see a bright light curving to the east. You hear the ceiling behind you beginning to collapse.",
+        "exits":[
         {
             "exit": "EAST",
             "target": "CAV3"
         }]
 },
 "CAV3": {
-    "name": "Entrance",
-    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "name": "Cavern #3",
+    "desc": "A large cavern full of sparkling crystals fills your vision. A pond sits in the middle of the cavern with crystal clear liquid.\nThere is a giant ornate door to the north. Two smaller caverns branch to the east and west.\nThe liquid bubbles and hisses as you careful move across the chamber.",
     "exits": [{
         "exit": "EAST",
         "target": "SHAM"
@@ -53,8 +50,8 @@
 ]
 },
 "HALL": {
-    "name": "Entrance",
-    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "name": "Feasting Hall",
+    "desc": "The Hall has four large doors to the north, east, west and south.\nSeveral drunk goblins are passed out at the tables in the room.",
     "exits": [{
         "exit": "NORTH",
         "target": "BONF"
@@ -73,8 +70,8 @@
     }]
 },
 "ARMO": {
-    "name": "Entrance",
-    "desc": "This is the entrance to a dark cavern. Your trials await!",
+    "name": "Armory",
+    "desc": "A burning forge sits in the corner. A dwarven blacksmith sees you come in and grins.\nHe holds out a mythril sword with a nod and points at a door to the north.",
     "exits": [{
         "exit": "WEST",
         "target": "HALL"
@@ -89,11 +86,6 @@
     "exits": [{
         "exit": "SOUTH",
         "target": "HALL"
-    }],
-    "items": [{
-        "item": "MEAT",
-        "desc": "A steaming hunk of meat still firmly attached to the bone",
-        "take": "You take the meat quietly. The goblins don't seem to notice"
     }]
 },
 "BOSS": {
@@ -102,11 +94,6 @@
     "exits": [{
         "exit": "EAST",
         "target": "HALL"
-    }],
-    "items": [{
-        "item": "ROD",
-        "desc": "An platinum rod is displayed on the wall.",
-        "take": "You take the rod from the wall. It hums with arcane power."
     }]
 },
 "SHAM": {
@@ -115,11 +102,6 @@
     "exits": [{
         "exit": "WEST",
         "target": "CAV3"
-    }],
-    "items": [{
-        "item": "MEDAL",
-        "desc": "The woman holds out a silver chained medallion",
-        "take": "You take the medallion. A protective shield springs to life around you."
     }]
 },
 "PET1": {
@@ -146,7 +128,11 @@
 "TREASR": {
     "name": "Treasure Room",
     "desc": "You have found the treasure hoard of the Great Beholder, Coeryn The Ear!\nAs you grab as many gold, platinum and jeweled baubles you can find,\nyou see a small hatch in the floor. Loot in tow, you climb out to the surface and vanish into the night, victorious!!",
-    "exits": []
+    "exits":[
+        {
+        "exit": "",
+        "target": ""
+    }]
 }
 
 
